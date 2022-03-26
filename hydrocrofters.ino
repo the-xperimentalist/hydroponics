@@ -58,9 +58,9 @@ DallasTemperature sensors(&oneWire);
 double tempValue=0.0;
 
 // Temperature Feedback pins
-int tempHighLED = 6;
-int tempNormalLED = 7;
-int tempLowLED = 8;
+int tempHighLED = 3;
+int tempNormalLED = 4;
+int tempLowLED = 5;
 
 // Temperature threshold
 double tempLow = 15.0;
@@ -81,13 +81,6 @@ int analogBuffer[SCOUNT];    // store the analog value in the array, read from A
 int analogBufferTemp[SCOUNT];
 int analogBufferIndex = 0,copyIndex = 0;
 float averageVoltage = 0,tdsValue = 0,temperature = 25;
-
-// TDS Feedback pins
-int tdsHigh = 3;
-int tdsNormal = 4;
-int tdsLow = 5;
-
-// TDS threshold
 
 /////////////////////////////////////////////
 //             END TDS include             //
